@@ -1,1 +1,1 @@
-## Empty CPP - CPP project template for VSCode + MinGW + CMake
+## The classic guess the number game in C++

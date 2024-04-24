@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.5.0)
-project(Project VERSION 0.1.0 LANGUAGES CXX)
+project("Number game" VERSION 0.1.0 LANGUAGES CXX)
 
 include(CTest)
 enable_testing()
 # Compile all files inside the src directory
 file(GLOB_RECURSE SOURCES src/*.cpp)
-add_executable(Executable ${SOURCES})
+add_executable(num_game ${SOURCES})
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -pedantic-errors \
 -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion")
