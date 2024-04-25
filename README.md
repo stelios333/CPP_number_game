@@ -1,1 +1,1 @@
-## The classic guess the number game in C++
+## The very boring guess the number game in C++

@@ -1,6 +1,22 @@
 #include <iostream>
+#include "input.h"
+#include "random_num.h"
 
 int main(){
-    // Test
+    std::cout << "You have to guess a number between 1 and 1000.\n";
+    int the_random_number = rand_int(1,1000);
+    std::cout << "The number is " << the_random_number << ", lol.\n";
+    int input = 1001; // Imposible for any number over 1000 to be the correct awnser
+    int trials = 0;
+    while(the_random_number!=input){
+        input = getUserInput("Enter a number: ");
+        trials += 1;
+        if(input > the_random_number) {
+            std::cout << "The number is too big.\n";
+        } else if (input<the_random_number){
+            std::cout << "The number is too small.\n";
+        }
+    }
+    std::cout << "Congratulations you guessed the number with " << trials << " trials!";
     return 0;
 }
